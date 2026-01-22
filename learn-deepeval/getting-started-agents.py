@@ -1,4 +1,4 @@
-# Kushal Chattopadhyay
+# Author: Kushal Chattopadhyay
 
 from abc import ABC, abstractmethod
 from deepeval.metrics import TaskCompletionMetric
