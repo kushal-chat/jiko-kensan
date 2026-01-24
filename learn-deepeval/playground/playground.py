@@ -2,19 +2,6 @@ from deepeval.dataset import EvaluationDataset, Golden
 from deepeval.tracing import observe
 from deepeval.metrics import PlanQualityMetric
 
-@observe()
-def x():
-    print("Hi")
-
-    @observe(metrics=[PlanQualityMetric()])
-    def tool():
-
-        print("Hi")
-    
-    return tool()
-
-dataset = EvaluationDataset(goldens = [Golden(input = "hello")])
-
 # ~~~~~~~~~~~~~
 
 from deepeval.test_case import LLMTestCase
@@ -55,4 +42,4 @@ metric = ToolCorrectnessMetric()
 # metric.measure(test_case)
 # print(metric.score, metric.reason)
 
-evaluate(test_cases=[test_case], metrics=[metric])
+# evaluate(test_cases=[test_case], metrics=[metric])

@@ -14,7 +14,7 @@ class DeepEvalAgent(ABC):
         pass
 
     @abstractmethod
-    def agent(self,):
+    def agent(self):
         pass
 
 ### Python Agent
